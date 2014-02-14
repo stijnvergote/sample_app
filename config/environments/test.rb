@@ -33,4 +33,7 @@ SampleApp::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  #tests versnellen door bcrypt's cost functie te verlagen
+  ActiveModel::SecurePassword.min_cost = true
 end
